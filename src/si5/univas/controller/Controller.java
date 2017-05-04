@@ -44,16 +44,7 @@ public class Controller {
 	TelaCadastroPedido telaCadastroPedido = new TelaCadastroPedido(this);
 	ConsultaClienteView consultaCliente = new ConsultaClienteView (this);
 	ConsultaProdutoView consultaProduto = new ConsultaProdutoView(this);
-<<<<<<< HEAD
-	
-=======
-<<<<<<< HEAD
-=======
-	
->>>>>>> bf453fbb42870e6493fa631f1a9d4adbe1cf5968
-	
-	
->>>>>>> 55bbe1c30dc83b3cbf3a472192ba432870660376
+
 	public void iniciar() throws SQLException, DAOException, ParseException{
 		inicial.tela();
 		
@@ -170,38 +161,23 @@ public class Controller {
 	public ArrayList<Cliente> pesquisaCliente() throws SQLException, DAOException{
 		ClienteDAO cliente = new ClienteDAO();
 		return cliente.pesquisarClientes();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 55bbe1c30dc83b3cbf3a472192ba432870660376
-	}
 	
 	public ArrayList<Produto> pesquisaProduto() throws SQLException, DAOException{
 		ProdutoDAO produto = new ProdutoDAO();
 		return produto.pesquisarProduto();
-<<<<<<< HEAD
-=======
->>>>>>> bf453fbb42870e6493fa631f1a9d4adbe1cf5968
-	}
 	
 	public ArrayList<Produto> pesquisaProduto() throws SQLException, DAOException{
 		ProdutoDAO produto = new ProdutoDAO();
 		return produto.pesquisarProduto();
->>>>>>> 55bbe1c30dc83b3cbf3a472192ba432870660376
-	}
-	
+
 	public void cadastrarPedido(Cliente cliente, Pedido pedido) throws DAOException{
 		PedidoDAO pedidoDAO = new PedidoDAO();
 		pedidoDAO.insertPedido(pedido, cliente);
 	}
-<<<<<<< HEAD
-	
+
 	public void cadastrarItem(Cliente cliente,ArrayList<Item> item) throws DAOException{
 		ItemDAO itemDAO = new ItemDAO();
 	}
-=======
->>>>>>> 55bbe1c30dc83b3cbf3a472192ba432870660376
 		
 	
 	
